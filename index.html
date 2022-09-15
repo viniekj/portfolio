@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio Vinicius Schuck</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow:wght@100&display=swap"rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+</head>
+
+<body>
+  <div class="container">
+
+    <section class="introduction">
+      <div class="card">
+        <img id="foto" src="./images/foto.jpg">
+        <h1>
+          < Vinicius Cassere Schuck />
+        </h1>
+        <h2>Desenvolvedor Frontend Junior</h2>
+        <a href="https://github.com/viniekj"><img id="github" src="images/github.png"></a>
+    </section>
+
+    <section class="skills">
+      <h1><span class="auto-type"></span></h1>
+
+      <div id="html-skill">
+        <img id="html-icon" src="./images/html.png" alt="html icon">
+        <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web, basicamente o esqueleto da página.</p>
+      </div>
+
+      <div id="css-skill">
+        <img id="css-icon" src="./images/css.png" alt="css">
+        <p>O CSS(Cascading Style Sheets) é um mecânismo que adiciona um estilo a um documento web, alterando a cor do texto, fonte e espaçamento entre blocos.</p>
+      </div>
+
+      <div id="js-skill">
+        <img id="js-icon" src="./images/js.png">
+        <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
+      </div>
+
+    </section>
+
+    <section class="projetos">
+      <h1>Projetos</h1>
+
+      <div class="demo">
+
+        <div class="project">
+          <div class="img-demo"><p>Em Andamento</p></div>
+          <p class="text-demo"></p> 
+        </div>
+        <div class="project">
+          <div class="img-demo"><p>Em Andamento</p></div>
+          <p class="text-demo"></p> 
+        </div>
+      <div class="project">
+        <div class="img-demo"><p>Em Andamento</p></div>
+        <p class="text-demo"></p> 
+      </div>
+
+      </div>
+    </section>
+
+
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type",{
+      strings:["Habilidades"],
+      typeSpeed:180,
+      backSpeed:180,
+      smartBackspace:false,
+      loop:true
+    })
+  </script>
+</body>
+
+</html>
