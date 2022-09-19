@@ -29,7 +29,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     height: 50vh;
     margin-left: 8rem;
     margin-top: 12rem;
@@ -41,7 +41,7 @@ body {
 .card h1 {
     text-align: center;
     text-shadow: 1px 4px 1px #1c1c1c;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .card h2 {
@@ -53,7 +53,8 @@ body {
 
 #foto {
     margin: auto;
-    box-shadow: 5px 5px 5px #212121;
+    margin-bottom: 2rem;
+    box-shadow: 1px 5px 10px #212121;
     height: 12rem;
     width: 12rem;
     border-radius: 100px;
@@ -61,7 +62,7 @@ body {
 
 #github {
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     height: 3rem;
     width: 3rem;
     transition: 0.5s;
@@ -159,13 +160,13 @@ body {
     height: 80vh;
     margin-top: 2%;
     justify-content: space-around;
-
 }
 
 .project {
-    width: 30%;
-    height: 60vh;
-    margin-top: 1%;
+    width: 25%;
+    height: 50vh;
+    flex-wrap: wrap;
+    margin-top: 3%;
     border-radius: 3%;
     background: linear-gradient(145deg, #191919, #1e1e1e);
     box-shadow: 18px 18px 3px #191919,
@@ -188,21 +189,21 @@ body {
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-family: 'Barlow', sans-serif;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .contact {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 10rem;
+    height: 7rem;
     width: 50%;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 6%;
     border-radius: 2%;
     border-style: solid;
     border-color: #000;
-    transition:0.5s;
+    transition: 0.5s;
 }
 
 .contact h1 {
@@ -210,16 +211,164 @@ body {
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 3px;
     padding: 32px;
-    
 }
 
-.contact:hover{
+.contact:hover {
     background-color: #000;
-    transition:0.5s;
+    transition: 0.5s;
 }
+
 a:link {
     text-decoration: none;
 }
+
+
+
+@media (max-width: 900px) {
+    .card {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+        text-shadow: 1px 2.5px 1px #1c1c1c;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+        text-shadow: 1px 2px 1px #1c1c1c;
+    }
+
+    #foto {
+        margin: auto;
+        margin-bottom: 2rem;
+        box-shadow: 5px 5px 5px #212121;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #github {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .contact {
+        width: 50%;
+        height: 12vh;
+        background-color: #000;
+    }
+
+    .skills {
+        width: 100%;
+        margin-top: 3rem;
+        height:60vh;
+        padding-bottom: 3%;
+        gap:20px;
+    }
+
+    .skills h1 {
+        font-size: 40px;
+    }
+
+    .skills p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #html-skill {
+        display: flex;
+        margin-top: 1.2rem;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+        gap: 10px;
+    }
+
+    #html-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #css-skill {
+        display: flex;
+        margin-top: 1.2rem;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+        gap: 10px;
+    }
+
+    #css-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #js-skill {
+        display: flex;
+        margin-top: 1.2rem;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+        gap: 10px;
+    }
+
+    #js-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .projetos h1 {
+        font-size: 2.5rem;
+        padding: 10%;
+    }
+
+    .demo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 150vh;
+        margin-top: 6%;
+        gap: 50px;
+    }
+
+    .project {
+        width: 65%;
+        height: 35vh;
+        margin-bottom: 6%;
+        margin-top:6%;
+    }
+
+    .img-demo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+        height: 10rem;
+        width: 80%;
+        border-radius: 2%
+    }
+
+    .img-demo p {
+        font-size: 1.8rem;
+    }
+
+}
+  @media(max-width:660px){
+    .skills{
+        height:90vh;
+    }
+  }
+  @media(max-width:400px){
+    .skills{
+        height:130vh;
+    }
+  }
