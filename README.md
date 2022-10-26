@@ -1,2 +1,2 @@
-# portifolio
-Portifólio Vinicius Schuck
+# portfolio
+Portfólio Vinicius Schuck
